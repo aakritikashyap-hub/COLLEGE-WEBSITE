@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Facilities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .facilities {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 320px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            border: 5px solid #ddd;
+            transition: border 0.3s ease;
+        }
+        .card:hover img {
+            border: 5px solid #0044cc;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #2c3e50;
+            font-size: 22px;
+        }
+        .card p {
+            color: #666;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #0044cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #163ca2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Academics - College</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="facilities">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/58/f3/55/58f3558db95a8382cc6c9b0862c3b51d.jpg" alt="Lecture Halls">
+                <div class="card-content">
+                    <h3>Lecture Halls</h3>
+                    <p>Spacious and well-equipped halls for an effective learning experience.</p>
+                    <a href="lecture-halls.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZiFbTPijbJVHm3CZ-QGj2L3FtSt3v3c0CQ&s.jpg" alt="Computer Lab">
+                <div class="card-content">
+                    <h3>Computer Lab</h3>
+                    <p>Modern computer labs with high-performance desktop computers for practical learning.</p>
+                    <a href="computer_lab.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0jXIoiqi53eabQBISCm4_uPg2jzZaruldw&s.jpg" alt="Library">
+                <div class="card-content">
+                    <h3>Library</h3>
+                    <p>Digital and physical resources for extensive academic research.</p>
+                    <a href="library.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
